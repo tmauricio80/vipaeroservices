@@ -179,7 +179,7 @@ footer .footer-top-area {  padding: 150px 0 50px;}
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 200px) and (max-width: 479px) {
-	.container {width:300px}
+	/* .container {width:300px} */
 	.mobile-menu-area{display: block;}
 	.main-header-area, .home2 .main-header-area, .search-area, .slider-content, .header-top-area{display: none;}
 	.header-top-area .header-top-left ul li {font-size: 14px;}
