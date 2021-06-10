@@ -27,14 +27,18 @@
   line-height: 1.65;
 }
 
-.flaticon-briefcase:before { content: "\f100"; }
-.flaticon-employee:before { content: "\f101"; }
-.flaticon-finances:before { content: "\f102"; }
-.flaticon-graph:before { content: "\f103"; }
-.flaticon-group:before { content: "\f104"; }
-.flaticon-handshake:before { content: "\f105"; }
-.flaticon-piggy-bank:before { content: "\f106"; }
-.flaticon-presentation:before { content: "\f107"; }
-.flaticon-smartphone:before { content: "\f108"; }
-.flaticon-speedometer:before { content: "\f109"; }
-.flaticon-technology:before { content: "\f10a"; }
+  .flaticon-skill-development:before {
+      content: "\f101";
+  }
+  .flaticon-product:before {
+      content: "\f102";
+  }
+  .flaticon-handshake:before {
+      content: "\f103";
+  }
+  .flaticon-contract:before {
+      content: "\f104";
+  }
+  .flaticon-round-account-button-with-user-inside:before {
+      content: "\f105";
+  }

@@ -139,7 +139,7 @@ preview-2
   color: #ffffff;
 }
 .preview-2 .nivo-directionNav a.nivo-prevNav:before{
-  background:#01b1d7;
+  background:#a47e3c;
   content: "\f053";
   font: normal normal normal 14px/1 FontAwesome;
   color: #ffffff;
@@ -157,11 +157,11 @@ preview-2
   z-index: 9;
 }
 .preview-2 .nivo-directionNav a.nivo-nextNav:hover:before{
-  background:#0a6f85;
+  background:#a47e3c;
   color: #ffffff;
 }
 .preview-2 .nivo-directionNav a.nivo-nextNav:before{
-  background:#01b1d7;
+  background:#a47e3c;
   content: "\f054";
   font: normal normal normal 14px/1 FontAwesome;
   color: #ffffff;
