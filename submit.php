@@ -49,6 +49,7 @@ try {
     $message .= (!empty($_POST['partNumber']) && $_POST['partNumber'] !== '') ? 'Part Number : '.$_POST['partNumber']."<br />" : '';
     $message .= (!empty($_POST['condition']) && $_POST['condition'] !== '') ? 'Condition : '.$_POST['condition']."<br />" : '';
     $message .= (!empty($_POST['priority']) && $_POST['priority'] !== '') ? 'Priority : '.$_POST['priority']."<br />" : '';
+    $message .= (!empty($_POST['details']) && $_POST['details'] !== '') ? 'Details : '.$_POST['details']."<br />" : '';
     $mail->Body    = $message;
     $mail->AltBody = $message;
     $mail->send();
