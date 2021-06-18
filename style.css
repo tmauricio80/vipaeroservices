@@ -420,6 +420,9 @@ ul {
   background: #f8f8f8;
   padding: 90px 0;
 }
+.service-area .single-service .media img {
+  max-height: 175px;
+}
 .service-area .single-service .media .pull-left {
   margin-right: 30px;
 }
@@ -428,7 +431,7 @@ ul {
   color: #a47e3c;
   line-height: 0;
 }
-.service-area .single-service .media .media-body h4.media-heading a {
+.service-area .single-service .media .media-body h4.media-heading {
   font-size: 20px;
   line-height: 1.5;
   color: #222222;
@@ -935,9 +938,12 @@ ul {
 .home-callback-area .call-back-form fieldset .form-group button.btn-send:hover {
   background: #0a6f85;
 }
-/* ------------------------------------
-11.Home page News start here
----------------------------------------*/
+.home-callback-area .call-back-form .optional-field {
+  display: none;
+}
+  /* ------------------------------------
+  11.Home page News start here
+  ---------------------------------------*/
 .home-news-area {
   padding: 90px 0 150px;
 }
@@ -1110,8 +1116,8 @@ footer .footer-top-area .main-footer .single-footer h3 {
   margin-bottom: 40px;
 }
 footer .footer-top-area .main-footer .single-footer a {
-  display: block;
   margin-bottom: 20px;
+  color: #a47e3c;
 }
 footer .footer-top-area .main-footer .single-footer p {
   color: #c3c3c3;
@@ -1313,7 +1319,7 @@ footer .footer-bottom-area p {
 15.Inner Page Header serction start here 
 --------------------------------------*/
 .inner-page-header {
-  background: url(img/bennar.jpg) no-repeat;
+  background: url(img/values.jpeg) no-repeat;
   padding: 113px 0;
   background-position: center center;
   background-size: cover;
@@ -1345,7 +1351,6 @@ footer .footer-bottom-area p {
 }
 .inner-page .about-page-content .about-title-area h2 {
   color: #000000;
-  background: url(img/about/about-title-bg.png) no-repeat;
   background-position: center -32px;
   height: 80px;
 }
