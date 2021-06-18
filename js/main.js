@@ -171,7 +171,6 @@ function submitForm() {
 
     $.post( "./submit.php", values)
         .done(function( data ) {
-            console.log(data);
             if (data == 1){
                 $.alert({
                     title: 'Successful!',
