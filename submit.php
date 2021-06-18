@@ -34,7 +34,7 @@ print_r($_POST);
 //     $mail->isHTML(true);                                  //Set email format to HTML
 //     $mail->Subject = 'New Inquiry in Website : '.$_POST['topic'];
 //
-//     $message =  $mail->Subject;
+//     $message =  $mail->Subject."<br />";
 //     $message .= 'Company : '.$_POST['company']."<br />";
 //     $message .= 'Full Name : '.$_POST['full-name']."<br />";
 //     $message .= 'Email : '.$_POST['email']."<br />";
