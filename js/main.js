@@ -136,6 +136,7 @@ function submitForm() {
     let values = jQuery('#consultation-form').serializeArray();
     let errorMessage = '';
     let process = true;
+
     $.each(values, function (index, value) {
         if (value.name === 'company' && value.value === '') {
             errorMessage += 'Company Field Required<br />';
@@ -156,8 +157,9 @@ function submitForm() {
             errorMessage += 'Phone Field Required<br />';
             process = false;
         }
-
     });
+
+    value.topic =  $( "#sel1 option:selected" ).text();
 
     if (!process) {
         $.alert({
@@ -169,7 +171,18 @@ function submitForm() {
 
     $.post( "./submit.php", values)
         .done(function( data ) {
-            console.log(data);
+            if (data == 1){
+                $.alert({
+                    title: 'Successful!',
+                    content: 'One of our agent will contact you soon!',
+                });
+                $('#consultation-form').trigger("reset");
+            } else {
+                $.alert({
+                    title: 'Alert!',
+                    content: 'Cant process, please try again',
+                });
+            }
         });
 
 }
