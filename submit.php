@@ -16,6 +16,15 @@ $mail = new PHPMailer(true);
 
 try {
 
+    $mail->IsSMTP();
+    $mail->Host = "secure.emailsrvr.com";
+
+    // optional
+    // used only when SMTP requires authentication
+    $mail->SMTPAuth = true;
+    $mail->Username = 'info@vipaeroservices.com';
+    $mail->Password = 'Info2021';
+
     //Recipients
     $mail->setFrom('info@vipaeroservices.com', 'VIP Aeroservices');
     $mail->addAddress('tmauricio80@gmail.com', 'Mauricio Tovar');     //Add a recipient
