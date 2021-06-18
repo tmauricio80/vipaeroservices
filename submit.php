@@ -34,12 +34,11 @@ try {
 
     //Recipients
     $mail->setFrom('info@vipaeroservices.com', 'VIP Aeroservices');
-//     $mail->addAddress('info@vipaeroservices.com', 'Mauricio Tovar');     //Add a recipient
-    $mail->addAddress('tmauricio80@gmail.com', 'Mauricio Tovar');     //Add a recipient
+    $mail->addAddress('info@vipaeroservices.com', 'VIP Aeroservices');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'New Inquiry in Website : '.$_POST['topic'];
+    $mail->Subject = 'New Website Inquiry : '.$_POST['topic'];
 
     $message =  $mail->Subject."<br />";
     $message .= 'Company : '.$_POST['company']."<br />";
