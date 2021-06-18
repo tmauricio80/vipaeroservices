@@ -159,7 +159,7 @@ function submitForm() {
         }
     });
 
-    value.topic =  $( "#sel1 option:selected" ).text();
+    value['topic'] =  $( "#sel1 option:selected" ).text();
 
     if (!process) {
         $.alert({
@@ -171,6 +171,7 @@ function submitForm() {
 
     $.post( "./submit.php", values)
         .done(function( data ) {
+            console.log(data);
             if (data == 1){
                 $.alert({
                     title: 'Successful!',

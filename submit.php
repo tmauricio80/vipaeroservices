@@ -33,15 +33,15 @@ try {
     $mail->Subject = 'New Inquiry in Website : '.$_POST['topic'];
 
     $message =  $mail->Subject;
-    $message .= 'Company : '.$_POST['company']."\n";
-    $message .= 'Full Name : '.$_POST['full-name']."\n";
-    $message .= 'Email : '.$_POST['email']."\n";
-    $message .= 'Phone : '.$_POST['phone']."\n";
-    $message .= 'Phone : '.$_POST['phone']."\n";
-    $message .= (isset($_POST['itemName'])) ? 'Item Name : '.$_POST['itemName']."\n" : '';
-    $message .= (isset($_POST['partNumber'])) ? 'Part Number : '.$_POST['partNumber']."\n" : '';
-    $message .= (isset($_POST['condition'])) ? 'Condition : '.$_POST['condition']."\n" : '';
-    $message .= (isset($_POST['priority'])) ? 'Priority : '.$_POST['priority']."\n" : '';
+    $message .= 'Company : '.$_POST['company']."<br />";
+    $message .= 'Full Name : '.$_POST['full-name']."<br />";
+    $message .= 'Email : '.$_POST['email']."<br />";
+    $message .= 'Phone : '.$_POST['phone']."<br />";
+    $message .= 'Phone : '.$_POST['phone']."<br />";
+    $message .= (isset($_POST['itemName'])) ? 'Item Name : '.$_POST['itemName']."<br />" : '';
+    $message .= (isset($_POST['partNumber'])) ? 'Part Number : '.$_POST['partNumber']."<br />" : '';
+    $message .= (isset($_POST['condition'])) ? 'Condition : '.$_POST['condition']."<br />" : '';
+    $message .= (isset($_POST['priority'])) ? 'Priority : '.$_POST['priority']."<br />" : '';
     $mail->Body    = $message;
     $mail->AltBody = $message;
 
