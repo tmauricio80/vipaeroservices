@@ -46,7 +46,6 @@ try {
     $message .= 'Full Name : '.$_POST['full-name']."<br />";
     $message .= 'Email : '.$_POST['email']."<br />";
     $message .= 'Phone : '.$_POST['phone']."<br />";
-    $message .= 'Phone : '.$_POST['phone']."<br />";
     $message .= (!empty($_POST['itemName']) && $_POST['itemName'] !== '') ? 'Item Name : '.$_POST['itemName']."<br />" : '';
     $message .= (!empty($_POST['partNumber']) && $_POST['partNumber'] !== '') ? 'Part Number : '.$_POST['partNumber']."<br />" : '';
     $message .= (!empty($_POST['condition']) && $_POST['condition'] !== '') ? 'Condition : '.$_POST['condition']."<br />" : '';
