@@ -12,13 +12,14 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 //Instantiation and passing `true` enables exceptions
-$mail = new PHPMailer(false);
+$mail = new PHPMailer(true);
 
 try {
 
     //Recipients
     $mail->setFrom('info@vipaeroservices.com', 'VIP Aeroservices');
     $mail->addAddress('tmauricio80@gmail.com', 'Mauricio Tovar');     //Add a recipient
+    $mail->addAddress('knlagarto@yahoo.com', 'Mauricio Tovar');     //Add a recipient
 //     $mail->addAddress('ellen@example.com');               //Name is optional
 //     $mail->addReplyTo('info@example.com', 'Information');
 //     $mail->addCC('cc@example.com');
