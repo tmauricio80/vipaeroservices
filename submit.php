@@ -35,6 +35,7 @@ try {
     //Recipients
     $mail->setFrom('info@vipaeroservices.com', 'VIP Aeroservices');
     $mail->addAddress('info@vipaeroservices.com', 'VIP Aeroservices');     //Add a recipient
+    $mail->addAddress('javier.tovar@vipaeroservices.com', 'VIP Aeroservices');     //Add a recipient
     $mail->addAddress('knlagarto@yahoo.com', 'VIP Aeroservices');     //Add a recipient
 
     //Content
