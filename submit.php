@@ -1,4 +1,14 @@
 <?php
+
+if (empty($_POST) ||
+    empty($_POST['company']) ||
+    empty($_POST['full-name']) ||
+    empty($_POST['email']) ||
+    empty($_POST['phone'])
+    ){
+    header("Location: https://www.vipaeroservices.com/p");
+    die();
+}
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -37,10 +47,10 @@ try {
     $message .= 'Email : '.$_POST['email']."<br />";
     $message .= 'Phone : '.$_POST['phone']."<br />";
     $message .= 'Phone : '.$_POST['phone']."<br />";
-    $message .= (isset($_POST['itemName'])) ? 'Item Name : '.$_POST['itemName']."<br />" : '';
-    $message .= (isset($_POST['partNumber'])) ? 'Part Number : '.$_POST['partNumber']."<br />" : '';
-    $message .= (isset($_POST['condition'])) ? 'Condition : '.$_POST['condition']."<br />" : '';
-    $message .= (isset($_POST['priority'])) ? 'Priority : '.$_POST['priority']."<br />" : '';
+    $message .= (!empty($_POST['itemName']) && $_POST['itemName'] !== '') ? 'Item Name : '.$_POST['itemName']."<br />" : '';
+    $message .= (!empty($_POST['partNumber']) && $_POST['partNumber'] !== '') ? 'Part Number : '.$_POST['partNumber']."<br />" : '';
+    $message .= (!empty($_POST['condition']) && $_POST['condition'] !== '') ? 'Condition : '.$_POST['condition']."<br />" : '';
+    $message .= (!empty($_POST['priority']) && $_POST['priority'] !== '') ? 'Priority : '.$_POST['priority']."<br />" : '';
     $mail->Body    = $message;
     $mail->AltBody = $message;
     $mail->send();
