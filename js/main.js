@@ -167,13 +167,10 @@ function submitForm() {
         return;
     }
 
-
-
-    $.post("./submit.php", function (data) {
-        console.log(`data`);
-        console.log(data);
-        // $(".result").html(data);
-    });
+    $.post( "./submit.php", values)
+        .done(function( data ) {
+            console.log(data);
+        });
 
 }
 
