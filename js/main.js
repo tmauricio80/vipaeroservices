@@ -159,7 +159,7 @@ function submitForm() {
         }
     });
 
-    values.topic =  $( "#sel1 option:selected" ).text();
+    values['topic'] =  $( "#sel1 option:selected" ).text();
 
     if (!process) {
         $.alert({
