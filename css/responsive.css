@@ -703,6 +703,10 @@
     .home-about-area, .service-area, .home-faq-area, .home-counter-down-area, .home-team-area, .home-callback-area, .inner-page-header, .inner-page .about-page-content, .inner-page .footer-top-area, .total-blog-area, .call-top-action, .our-project-one, .our-project-two, .news-page-area, .contact-us-page-area, .error-page-area {
         padding: 50px 0;
     }
+
+    .service-area .single-service .media img {
+        max-height: inherit;
+    }
 }
 
 /* Large Mobile :480px. */
@@ -1062,5 +1066,9 @@
 	.home-callback-area .call-back-content{
 		margin-top: 30px;
 	}
+
+    .service-area .single-service .media img {
+        max-height: inherit;
+    }
 
 }

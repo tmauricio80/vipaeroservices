@@ -204,6 +204,7 @@ ul {
 .header-top-area .header-top-right ul li {
   display: inline-block;
   color: #cacaca;
+  margin-right: 10px;
 }
 .header-top-area .header-top-right ul li i {
   margin: 0 5px;
@@ -418,6 +419,10 @@ ul {
 ---------------------------------------*/
 .service-area {
   background: #f8f8f8;
+  padding: 90px 0;
+}
+.service-area-white {
+  background: #FFFFFF;
   padding: 90px 0;
 }
 .service-area .single-service .media img {
@@ -2663,4 +2668,12 @@ Sidebar area start Here
 
 a{
   color: #a47e3c;
+}
+
+.into-nivo {
+  position: relative !important;
+}
+
+.owl-item {
+  height: 280px;
 }
